@@ -1,6 +1,6 @@
 # Debian Office Server
 
-## 📌 Overview
+##Overview
 This project documents the design and implementation of a Debian 12–based
 office server built from scratch to support internal file sharing,
 user access control, and self-hosted collaboration services.
@@ -10,7 +10,7 @@ security, scalability, and maintainability.
 
 ---
 
-## 🖥️ Environment
+##Environment
 - Operating System: Debian 12
 - Server Type: On-premise
 - File System: EXT4
@@ -20,7 +20,7 @@ security, scalability, and maintainability.
 
 ---
 
-## 🧱 System Architecture
+##System Architecture
 The server acts as a centralized office infrastructure node providing:
 - Authentication & user separation
 - File sharing for multiple divisions
@@ -32,7 +32,7 @@ then migrated to Cloudflare Tunnel to reduce public attack surface.
 
 ---
 
-## 🔐 User & Group Management
+##User & Group Management
 - User accounts created per employee
 - Group structure based on office divisions
 - Private home directories for each user
@@ -46,7 +46,7 @@ This approach ensures:
 
 ---
 
-## 🗄️ Storage Layout & Data Management
+##Storage Layout & Data Management
 - System and services hosted on SSD for performance
 - User data migrated to dedicated 2TB HDD
 - Proper mount points with ownership and permission control
@@ -59,7 +59,7 @@ Storage design focuses on:
 
 ---
 
-## 📁 File Sharing
+##File Sharing
 - Samba used as primary file sharing service
 - Access controlled via Linux groups and ACL
 - Combination of private and shared folders
@@ -70,7 +70,7 @@ while maintaining permission integrity.
 
 ---
 
-## ☁️ Self-Hosted Services
+##Self-Hosted Services
 - Initial deployment using OwnCloud
 - Migrated to Nextcloud for improved features and maintainability
 - Services deployed using Docker & Docker Compose
@@ -78,7 +78,7 @@ while maintaining permission integrity.
 
 ---
 
-## 🌐 Networking & Remote Access
+##Networking & Remote Access
 - Network configured using NetworkManager
 - Initial public access via:
   - NAT on MikroTik router
@@ -91,7 +91,7 @@ while maintaining permission integrity.
 
 ---
 
-## 🔐 Security Considerations
+##Security Considerations
 - Minimized exposed services to the public internet
 - Internal services isolated from external access
 - Tunnel-based access preferred over direct port forwarding
@@ -99,7 +99,7 @@ while maintaining permission integrity.
 
 ---
 
-## 📡 Network Infrastructure (MikroTik)
+##Network Infrastructure (MikroTik)
 - Router configured from scratch for office usage
 - Bandwidth management implemented
 - Dual-band wireless configuration
@@ -107,7 +107,7 @@ while maintaining permission integrity.
 
 ---
 
-## 🏢 Physical Infrastructure
+##Physical Infrastructure
 - Server rack organization
 - Cable management
 - Integration with office CCTV system (Hikvision)
