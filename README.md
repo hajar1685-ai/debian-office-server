@@ -1,6 +1,6 @@
 # Debian Office Server
 
-##Overview
+**##Overview**
 This project documents the design and implementation of a Debian 12–based
 office server built from scratch to support internal file sharing,
 user access control, and self-hosted collaboration services.
@@ -10,7 +10,7 @@ security, scalability, and maintainability.
 
 ---
 
-##Environment
+**##Environment**
 - Operating System: Debian 12
 - Server Type: On-premise
 - File System: EXT4
